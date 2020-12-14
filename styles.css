@@ -1,9 +1,9 @@
-body {
+body, html {
   height: 100%;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#FFF6F4;
 }
-
-
 
 nav {
   position: fixed;
@@ -14,16 +14,9 @@ nav {
   background-color: #151515;
 }
 
-#nav-img {
-  position: fixed;
-  z-index: 2;
-  width: 240px;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-#jumbotron-img {
-  width: 100%;
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/capriottis-jumbotron.jpg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,37 +26,102 @@ nav {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 20%;
-  left: 5%;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
   color: white;
 }
 
-.about-us{
-  margin: 0 20% 0 20%;
+.hero-text-right {
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-h1 {
-  font-size: 3.6rem;
+.hero-text h1 {
+  font-size: 50px;
 }
 
-p {
-  margin-left: 20px;
-  font-size: 1.5rem;
+.hero-text p {
+  font-size: 20px;
+}
+
+.hero-text-right h1 {
+  font-size: 50px;
+}
+
+.hero-text-right p {
+  font-size: 20px;
 }
 
 .hero-text button {
-  font-size: 1.5rem;
   border: none;
+  font-size: 16px;
+  font-weight: 800;
   outline: 0;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 10px 15px;
   color: black;
-  background-color: #ddd;
+  background-color: white;
   text-align: center;
   cursor: pointer;
 }
 
 .hero-text button:hover {
-  background-color: black;
+  background-color: #151515;
   color: white;
+}
+
+.hero-text-right button {
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 15px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text-right button:hover {
+  background-color: #151515;
+  color: white;
+}
+
+#nav-img {
+  position: fixed;
+  z-index: 2;
+  width: 240px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.about-us {
+  margin-top: 10px;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-text {
+
+  font-size: 20px;
+  width: 30%;
+  height: 100%;
+  margin-left: 15%;
+
+}
+
+.about-us-img {
+  height: 100%;
+  margin-right: 15%;
+}
+
+#store-img {
+  height: 100%;
 }
