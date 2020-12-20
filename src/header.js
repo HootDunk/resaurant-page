@@ -21,12 +21,15 @@ const styleCurrentNav = (pageName) => {
   })
   if (pageName == "Home"){
     document.getElementById("home-nav").style.background = "#df1a23";
+    navDiv.style.height = "0px";
   }
   else if (pageName == "Menu"){
     document.getElementById("menu-nav").style.background = "#df1a23";
+    navDiv.style.height = "150px";
   }
   else if (pageName == "Contact"){
     document.getElementById("contact-nav").style.background = "#df1a23";
+    navDiv.style.height = "150px";
   }
   else {
     console.log ('wrong name in function call')

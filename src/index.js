@@ -1,6 +1,7 @@
-import createHeader, { createHeaderHTML, styleCurrentNav } from "./header";
+import contactContent from "./contact";
+import { createHeaderHTML, styleCurrentNav } from "./header";
 import homePageContent from "./homepage";
-
+import menuContent from "./menu";
 
 
  window.addEventListener("DOMContentLoaded", () => {
@@ -20,14 +21,14 @@ import homePageContent from "./homepage";
 
   menuBtn.addEventListener("click", () => {
     styleCurrentNav("Menu");
-    document.getElementById("content").innerHTML="";
+    menuContent();
   })
 
   contactBtn.addEventListener("click", () => {
     styleCurrentNav("Contact");
-    document.getElementById("content").innerHTML="";
+    contactContent();
   })
-  
+
  })
 
 
